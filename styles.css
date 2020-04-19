@@ -20,10 +20,6 @@ body {
     font: 300 20px/1.7 'Josefin Sans';
 }
 
-figure {
-    padding: 10px;
-}
-
 p {
     margin-bottom: 2em;
 }
@@ -78,9 +74,9 @@ p {
 
 .list-items {
     display: flex;
-    width: 300%;
+    width: 600%;
     padding: .2em 0;
-    animation: slider 20s infinite alternate cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    animation: slider 40s infinite alternate cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
 .list-items:hover {
@@ -96,26 +92,41 @@ p {
     0% {
         margin-left: 0;
     }
-    20% {
+    8.33% {
         margin-left: 0;
     }
-    25% {
+    16.66% {
         margin-left: -100%;
     }
-    45% {
+    24.99% {
         margin-left: -100%;
     }
-    50% {
+    33.32% {
         margin-left: -200%;
     }
-    70% {
+    41.65% {
         margin-left: -200%;
     }
-    75% {
-        margin-left: -200%;
+    49.98% {
+        margin-left: -300%;
+    }
+    58.31% {
+        margin-left: -300%;
+    }
+    66.64% {
+        margin-left: -400%;
+    }
+    74.97% {
+        margin-left: -400%;
+    }
+    83.3% {
+        margin-left: -500%;
+    }
+    91.63% {
+        margin-left: -500%;
     }
     100% {
-        margin-left: -200%;
+        margin-left: -600%;
     }
 }
 
@@ -128,13 +139,20 @@ p {
     align-content: space-between;
 }
 
+.profile img {
+    width: 360px;
+    height: 260px;
+    margin: 10px;
+    padding-left: 10px;
+}
+
 .card {
-    width: 10em;
+    width: 93%;
     height: 20em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: .2em .5em;
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    margin: 0 .9em;
+    margin: 0 1.9em;
 }
 
 .card:hover {
@@ -142,12 +160,38 @@ p {
 }
 
 .card img {
-    width: 100%;
+    width: 20em;
+    height: 10em;
 }
 
 .card-container {
     padding: 2px 16px;
     font-size: 0.8em;
+    width: 40em;
+}
+
+.card-container p {
+    text-align: justify;
+}
+
+.redes img {
+    width: 35px;
+    height: 25px;
+}
+
+.formulario input,
+textarea {
+    width: 85%;
+    height: 40px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-radius: 3px;
+}
+
+textarea {
+    width: 70%;
+    height: auto;
 }
 
 
@@ -159,6 +203,11 @@ p {
     width: 100%;
     height: 200px;
     background: #000;
+    color: #fff;
     text-align: center;
     font-size: 20px;
+}
+
+.footer p {
+    padding-top: 80px;
 }
