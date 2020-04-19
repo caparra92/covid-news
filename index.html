@@ -1,10 +1,11 @@
 <html>
+
 <head>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="container">
+    <div class="wrapper">
         <div class="header">
             <h1>6 Principais noticias do COVID 19</h1>
         </div>
@@ -25,79 +26,115 @@
             </ul>
         </nav>
         <div id="home" class="section">
-            <div class="novidades">
-                <div class="card">
-                    <h2 class="title">noticia 1</h2>
-                    <p class="card-content">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos sunt tempore non voluptate omnis nesciunt excepturi tenetur consectetur, provident inventore harum. Quasi quam maxime consequuntur quaerat? Corrupti quis ipsum laudantium.
-                    </p>
-                    <hr>
-                    <a href="#" class="fonte">saiba mais</a>
+            <section class="container skills" id="skills">
+                <h1 class="title">novidades</h1>
+                <p>Quais são as novidades no coronavirus?</p>
+                <div class="slider">
+                    <ul class="list-items" ref="slider">
+                        <li>
+                            <div class='card'>
+                                <img src="#" alt=image/>
+                                <div class='card-container'>
+                                    <h1 class='card-title'><b></b></h1>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class='card'>
+                                <img src="#" alt=image />
+                                <div class='card-container'>
+                                    <h1 class='card-title'><b></b></h1>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class='card'>
+                                <img src="#" alt=image/>
+                                <div class='card-container'>
+                                    <h1 class='card-title'><b></b></h1>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class='card'>
+                                <img src="#" alt=image/>
+                                <div class='card-container'>
+                                    <h1 class='card-title'><b></b></h1>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class='card'>
+                                <img src="#" alt=image />
+                                <div class='card-container'>
+                                    <h1 class='card-title'><b></b></h1>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class='card'>
+                                <img src="#" alt=image/>
+                                <div class='card-container'>
+                                    <h1 class='card-title'><b></b></h1>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class='card'>
+                                <img :src="require('../assets/'+image)" alt=image/>
+                                <div class='card-container'>
+                                    <h1 class='card-title'><b></b></h1>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="novidades">
-                <div class="card">
-                    <h2 class="title">noticia 1</h2>
-                    <p class="card-content">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos sunt tempore non voluptate omnis nesciunt excepturi tenetur consectetur, provident inventore harum. Quasi quam maxime consequuntur quaerat? Corrupti quis ipsum laudantium.
-                    </p>
-                    <hr>
-                    <a href="#" class="fonte">saiba mais</a>
-                </div>
-            </div>
-            <div class="novidades">
-                <div class="card">
-                    <h2 class="title">noticia 1</h2>
-                    <p class="card-content">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos sunt tempore non voluptate omnis nesciunt excepturi tenetur consectetur, provident inventore harum. Quasi quam maxime consequuntur quaerat? Corrupti quis ipsum laudantium.
-                    </p>
-                    <hr>
-                    <a href="#" class="fonte">saiba mais</a>
-                </div>
-            </div>
-            <div class="novidades">
-                <div class="card">
-                    <h2 class="title">noticia 1</h2>
-                    <p class="card-content">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos sunt tempore non voluptate omnis nesciunt excepturi tenetur consectetur, provident inventore harum. Quasi quam maxime consequuntur quaerat? Corrupti quis ipsum laudantium.
-                    </p>
-                    <hr>
-                    <a href="#" class="fonte">saiba mais</a>
-                </div>
-            </div>
-            <div class="novidades">
-                <div class="card">
-                    <h2 class="title">noticia 1</h2>
-                    <p class="card-content">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos sunt tempore non voluptate omnis nesciunt excepturi tenetur consectetur, provident inventore harum. Quasi quam maxime consequuntur quaerat? Corrupti quis ipsum laudantium.
-                    </p>
-                    <hr>
-                    <a href="#" class="fonte">saiba mais</a>
-                </div>
-            </div>
-            <div class="novidades">
-                <div class="card">
-                    <h2 class="title">noticia 1</h2>
-                    <p class="card-content">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos sunt tempore non voluptate omnis nesciunt excepturi tenetur consectetur, provident inventore harum. Quasi quam maxime consequuntur quaerat? Corrupti quis ipsum laudantium.
-                    </p>
-                    <hr>
-                    <a href="#" class="fonte">saiba mais</a>
-                </div>
-            </div>
         </div>
         <div id="sobre" class="section">
-            <h1 class="main-title">sobre</h1>
+            <h1 class="title">sobre</h1>
+            <div class="profile">
+                <div class="text-profile">
+                    <p>Camilo Parra é um desenvolvedor web nascido o dia 20 de Setembro de 1992 na cidade de Pasto, na Colômbia, é apaixonado por esportes e musicas, é capoeirista faz 10 anos e licenciado em informática da universidade de Nariño. Trabalhou
+                        como docente de excel avançado por um ano e mora no Brasil desde fevereiro de 2019. Atualmente se desdenvolve como analista de suporte na ATOS Brasil na cidade de Londrina.
+                    </p>
+                </div>
+                <div class="image-profile"><img src="#" alt="profile"></div>
+            </div>
         </div>
         <div id="contato" class="section">
-            <h1 class="main-title">contato</h1>
+            <h1 class="title">contato</h1>
+            <div class="profile">
+                <div class="redes">
+                    <img src="#" alt="facebook">
+                    <img src="#" alt="linkedin">
+                    <img src="#" alt="github">
+                </div>
+                <div class="formulario">
+                    <form>
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" placeholder="Seu nome">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Seu email">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Sua mensagem..."></textarea>
+                    </form>
+                </div>
+            </div>
         </div>
         <div id="saiba-mais" class="section">
-            <h1 class="main-title">saiba mais</h1>
+            <h1 class="title">saiba mais</h1>
         </div>
     </div>
     <div class="footer">
         &copy; 2020 Camilo Parra
     </div>
 </body>
+
 </html>

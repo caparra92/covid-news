@@ -1,72 +1,157 @@
 /* LAYOUT */
 
-body {
-    background: #bbb8b8;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    padding: 0;
-    margin: 0;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
-.container {
-    background: #fff;
+body {
+    background: #f3f5f9;
+    text-align: center;
+    font: 300 20px/1.7 'Josefin Sans';
+}
+
+figure {
+    padding: 10px;
+}
+
+p {
+    margin-bottom: 2em;
+}
+
+.wrapper {
+    width: 80%;
     margin: 0 10%;
 }
 
-.header {
-    width: 100%;
-    text-align: center;
-    border: 1px solid black;
+.container {
+    margin: 5px;
+    margin-bottom: 20px;
 }
 
-.navbar {
-    width: 80%;
-    margin: 0 auto;
-    text-emphasis: none;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.item {
-    text-decoration: none;
-    list-style: none;
-    display: inline;
-    color: rgb(6, 119, 81);
-    font-size: 20px;
-}
-
-.section {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
-    height: 100vh;
-}
-
-.novidades {
-    width: 100%;
-    margin-right: 10px;
-    margin-left: 15px;
-}
-
-.card {
-    border: 1px solid gray;
-    border-radius: 2px;
-    width: 100%;
-    box-shadow: 2px 2px 3px solid black;
-    text-align: center;
-}
-
-.main-title {
+.title {
+    display: block;
     margin-bottom: 40px;
     font-size: 60px;
     text-transform: uppercase;
     text-align: center;
     width: 100%;
 }
+
+.line {
+    margin-bottom: 1em;
+}
+
+
+/*----*/
+
+
+/* Navbar*/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+}
+
+
+/* ---- */
+
+
+/* slider */
+
+.slider {
+    width: 75%;
+    margin: auto;
+    padding-bottom: .3em;
+    overflow: hidden;
+}
+
+.list-items {
+    display: flex;
+    width: 300%;
+    padding: .2em 0;
+    animation: slider 20s infinite alternate cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+.list-items:hover {
+    cursor: pointer;
+    animation-play-state: paused;
+}
+
+.list-items li {
+    width: auto;
+}
+
+@keyframes slider {
+    0% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: -200%;
+    }
+}
+
+#sobre {
+    height: 100vh;
+}
+
+.profile {
+    display: flex;
+    align-content: space-between;
+}
+
+.card {
+    width: 10em;
+    height: 20em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: .2em .5em;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin: 0 .9em;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-container {
+    padding: 2px 16px;
+    font-size: 0.8em;
+}
+
+
+/* ----- */
 
 .footer {
     margin: 0;
